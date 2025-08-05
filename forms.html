@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Grievance Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            color: black;
+            text-align: left;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        select, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .checkbox-container input {
+            margin-right: 10px;
+            transform: scale(1.2);
+            margin-top: 8px;
+        }
+        button {
+            background-color: #ffcc00;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 15px;
+        }
+        button:hover {
+            background: #ffaa00;
+        }
+    </style>
+    <script>
+        function submitGrievance() {
+            alert("Your academic grievance has been submitted successfully!");
+        }
+    </script>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Academic Grievance Form</h2>
+        <form onsubmit="submitGrievance(); return false;">
+            <label for="level">Select Grievance Level:</label>
+            <select id="level" required>
+                <option value="department">🏫 Department Level</option>
+                <option value="college">🏛️ College Level</option>
+            </select>
+
+            <label for="category">Select Grievance Category:</label>
+            <select id="category" required>
+                <option value="exam-issues">📖 Exam Related Issues</option>
+                <option value="course-material">📚 Course Material Issues</option>
+                <option value="faculty-issues">👨‍🏫 Faculty Related Complaints</option>
+                <option value="attendance">📊 Attendance Discrepancies</option>
+                <option value="other-academic">📩 Other Academic Issues</option>
+            </select>
+
+            <label for="details">Provide Brief Details:</label>
+            <textarea id="details" rows="4" placeholder="Describe your grievance here..." required></textarea>
+            
+            <div class="checkbox-container">
+                <input type="checkbox" id="anonymous" name="anonymous">
+                <label for="anonymous">Submit as Anonymous</label>
+            </div>
+            
+            <button type="submit">Submit Grievance</button>
+        </form>
+    </div>
+</body>
+</html>

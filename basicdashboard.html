@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grievance Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+        .dashboard-container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            color: black;
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        .student-info {
+            background: #007bff;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .student-info img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+        .student-details {
+            text-align: left;
+        }
+        .options-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .option {
+            background: #ffcc00;
+            padding: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .option:hover {
+            background: #ffaa00;
+            transform: scale(1.05);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+    <script>
+        function openGrievance(type) {
+            window.location.href = type + "-dashboard.html";
+        }
+    </script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="student-info">
+            <div class="student-details">
+                <h2>Welcome, <span id="student-name">Student Name</span></h2>
+                <p>ID: <span id="student-id">123456</span></p>
+                <p>Email: <span id="student-email">student@example.com</span></p>
+            </div>
+            <img src="student-photo.jpg" alt="Student Photo">
+        </div>
+
+        <div class="options-container">
+            <div class="option" onclick="openGrievance('academic')">📚 Academic Issues</div>
+            <div class="option" onclick="openGrievance('hostel')">🏠 Hostel Complaints</div>
+            <div class="option" onclick="openGrievance('facility')">🏢 Facility Issues</div>
+            <div class="option" onclick="openGrievance('ragging')">🚨 Anti-Ragging Report</div>
+            <div class="option" onclick="openGrievance('fees')">💰 Fees & Scholarship</div>
+            <div class="option" onclick="openGrievance('other')">📩 Other Complaints</div>
+            <div class="option" onclick="openGrievance('health')">🏥 Health & Medical</div>
+            <div class="option" onclick="openGrievance('sports')">⚽ Sports & Recreation</div>
+            <div class="option" onclick="openGrievance('canteen')">🍔 Canteen & Food</div>
+            <div class="option" onclick="openGrievance('transport')">🚌 Transport Issues</div>
+        </div>
+    </div>
+</body>
+</html>
+
