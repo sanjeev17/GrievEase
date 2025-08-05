@@ -1,25 +1,62 @@
-# GrievEase
-<<<<<<< HEAD
-GrievEase: A web-based student grievance system to streamline complaint registration &amp; resolution. Built with Flask, MySQL, HTML &amp; CSS, it lets students submit, track, and get updates on grievances. This boosts transparency for students and improves administrative efficiency.
-GrievEase - Student Grievance System
-A simple and efficient web-based system for managing student grievances, built with Python and MySQL.
+# 📌 GrievEase - Student Grievance System
 
-About This Project
-GrievEase was created to replace manual complaint processes with a streamlined digital solution. It provides a transparent platform where students can voice concerns and administrators can address them promptly.
+GrievEase is a **web-based student grievance management system** designed to make complaint registration and resolution **simple, transparent, and efficient**.  
 
-Core Features
-Easy Submission: Students can quickly register new grievances using a simple web form.
+Built with **Flask (Python)**, **MySQL**, **HTML**, and **CSS**, it empowers students to submit grievances, track their status, and receive timely updates — while helping administrators manage and resolve issues effectively.
 
-Status Tracking: After submitting, students can track the real-time status of their complaint (e.g., Submitted, In Progress, Resolved).
+---
 
-Admin Management: Administrators get a dedicated interface to view all complaints, update their status, and manage the resolution workflow.
+## 🌟 About the Project
 
-Technology Stack
-Backend: Flask (Python)
+Traditional grievance processes are often **slow, manual, and non-transparent**.  
+GrievEase solves this problem by offering a **digital platform** where:
 
-Database: MySQL
+- Students can **easily raise complaints**  
+- Administrators can **efficiently track & resolve issues**  
+- Both sides benefit from **greater transparency & accountability**
 
-Frontend: HTML, CSS
-=======
-Garam Galli is your one-stop shop for authentic Indian street food. We bring the vibrant flavors of India's bustling streets right to your doorstep. From spicy chaat to savory samosas, our menu is a celebration of India's diverse culinary heritage. Order now and experience the taste of India!
->>>>>>> 0cbc7c4c590ffa146332ee090ba8506683b688a2
+---
+
+## ⚙️ Core Features
+
+✅ **Easy Submission**  
+Students can quickly register grievances using a simple web form.  
+
+✅ **Real-Time Status Tracking**  
+Keep students informed with clear statuses:  
+- `Submitted`  
+- `In Progress`  
+- `Resolved`  
+
+✅ **Admin Dashboard**  
+Admins can:  
+- View all complaints  
+- Update statuses  
+- Manage the resolution workflow  
+
+---
+
+## 🖥️ Screenshots  
+
+### 🔑 Login Page  
+![Login Page](Screenshot%202025-08-05%20113206.png)  
+
+### 📝 Grievance Submission Form  
+![Form Page](Screenshot%202025-08-05%20122524.png)  
+
+---
+
+## 🛠️ Technology Stack  
+
+- **Backend:** Flask (Python)  
+- **Database:** MySQL  
+- **Frontend:** HTML, CSS  
+
+---
+
+## 🚀 Getting Started  
+
+1. **Clone the Repository**  
+```bash
+git clone https://github.com/your-username/GrievEase.git
+cd GrievEase
